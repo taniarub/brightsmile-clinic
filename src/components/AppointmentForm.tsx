@@ -86,7 +86,7 @@ const AppointmentForm = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Форма */}
-            <Card className="shadow-card border-0">
+            <Card className="shadow-card border-0 animate-slide-right">
               <CardHeader>
                 <CardTitle className="text-2xl font-semibold text-foreground flex items-center">
                   <Calendar className="w-6 h-6 mr-2 text-primary" />
@@ -215,7 +215,7 @@ const AppointmentForm = () => {
                   {/* Кнопка отправки */}
                   <Button 
                     type="submit" 
-                    className="w-full bg-gradient-primary hover:opacity-90 transition-opacity text-lg py-6 h-auto"
+                    className="w-full bg-gradient-primary hover:opacity-90 transition-opacity text-lg py-6 h-auto btn-shimmer hover-glow animate-pulse-glow"
                   >
                     Записаться на приём
                   </Button>
@@ -224,9 +224,9 @@ const AppointmentForm = () => {
             </Card>
 
             {/* Информация */}
-            <div className="space-y-8">
+            <div className="space-y-8 animate-slide-left">
               {/* Контактная информация */}
-              <Card className="shadow-card border-0">
+              <Card className="shadow-card border-0 hover-lift">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-foreground mb-6">
                     Контактная информация

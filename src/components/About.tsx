@@ -44,7 +44,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 animate-fade-in">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             О нашей клинике
@@ -57,7 +57,7 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Текстовая часть */}
-          <div className="animate-fade-up">
+          <div className="animate-slide-right">
             <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Почему выбирают нас?
             </h3>
@@ -87,7 +87,7 @@ const About = () => {
           </div>
 
           {/* Статистика */}
-          <div className="animate-scale-in">
+          <div className="animate-slide-left">
             <div className="bg-card rounded-2xl p-8 shadow-card">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
@@ -121,9 +121,9 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto animate-bounce-in">
           {doctors.map((doctor, index) => (
-            <Card key={index} className="hover-lift border-0 shadow-card">
+            <Card key={index} className="hover-lift hover-glow border-0 shadow-card">
               <CardContent className="p-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0">

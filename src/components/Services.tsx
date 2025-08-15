@@ -61,11 +61,11 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 animate-fade-up">
           {services.map((service, index) => (
-            <Card key={index} className="hover-lift border-0 shadow-card h-full">
+            <Card key={index} className="hover-lift hover-glow border-0 shadow-card h-full animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4 hover-scale animate-rotate-in">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-semibold text-foreground">
@@ -93,7 +93,7 @@ const Services = () => {
                 <Button 
                   onClick={scrollToAppointment}
                   variant="outline" 
-                  className="w-full border-primary/20 hover:bg-primary/5 hover:border-primary/40 transition-colors"
+                  className="w-full border-primary/20 hover:bg-primary/5 hover:border-primary/40 transition-colors btn-shimmer hover-scale"
                 >
                   Записаться
                 </Button>
@@ -103,7 +103,7 @@ const Services = () => {
         </div>
 
         {/* Дополнительная информация */}
-        <div className="bg-accent/50 rounded-2xl p-8 text-center">
+        <div className="bg-accent/50 rounded-2xl p-8 text-center animate-bounce-in">
           <h3 className="text-xl font-semibold text-foreground mb-4">
             Не нашли нужную услугу?
           </h3>
@@ -113,7 +113,7 @@ const Services = () => {
           </p>
           <Button 
             onClick={scrollToAppointment}
-            className="bg-gradient-primary hover:opacity-90 transition-opacity"
+            className="bg-gradient-primary hover:opacity-90 transition-opacity btn-shimmer hover-glow"
           >
             Получить консультацию
           </Button>

@@ -52,10 +52,10 @@ const Contacts = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Контактная информация */}
-          <div className="space-y-8">
+          <div className="space-y-8 animate-slide-right">
             <div className="grid gap-6">
               {contactInfo.map((contact, index) => (
-                <Card key={index} className="hover-lift border-0 shadow-card">
+                <Card key={index} className="hover-lift hover-glow border-0 shadow-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
                   <CardContent className="p-6">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 bg-gradient-primary rounded-2xl flex items-center justify-center flex-shrink-0">
@@ -89,7 +89,7 @@ const Contacts = () => {
             </div>
 
             {/* Социальные сети */}
-            <Card className="shadow-card border-0">
+            <Card className="shadow-card border-0 hover-lift">
               <CardContent className="p-6">
                 <h3 className="font-semibold text-foreground mb-4 flex items-center">
                   <MessageCircle className="w-5 h-5 mr-2 text-primary" />
@@ -115,8 +115,8 @@ const Contacts = () => {
           </div>
 
           {/* Карта */}
-          <div className="h-full min-h-[500px]">
-            <Card className="h-full shadow-card border-0">
+          <div className="h-full min-h-[500px] animate-slide-left">
+            <Card className="h-full shadow-card border-0 hover-glow">
               <CardContent className="p-0 h-full">
                 <div className="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg flex items-center justify-center">
                   <div className="text-center">

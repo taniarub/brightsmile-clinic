@@ -66,9 +66,9 @@ const Reviews = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 animate-fade-up">
           {reviews.map((review, index) => (
-            <Card key={index} className="hover-lift border-0 shadow-card h-full">
+            <Card key={index} className="hover-lift hover-glow border-0 shadow-card h-full animate-scale-in" style={{animationDelay: `${index * 0.15}s`}}>
               <CardContent className="p-6">
                 {/* Цитата */}
                 <div className="flex justify-center mb-4">
@@ -106,7 +106,7 @@ const Reviews = () => {
         </div>
 
         {/* Статистика отзывов */}
-        <div className="bg-card rounded-2xl p-8 shadow-card">
+        <div className="bg-card rounded-2xl p-8 shadow-card animate-bounce-in">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">5000+</div>

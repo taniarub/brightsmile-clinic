@@ -22,8 +22,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/50"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl">
+      <div className="container mx-auto px-4 relative z-10 text-center">
+        <div className="max-w-4xl mx-auto">
           <div className="animate-fade-up">
             {/* Бейдж */}
             <div className="inline-flex items-center space-x-2 bg-accent/80 backdrop-blur-sm text-accent-foreground px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -41,13 +41,13 @@ const Hero = () => {
             </h1>
 
             {/* Подзаголовок */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
               Современная стоматологическая клиника в Минске с передовыми технологиями 
               и индивидуальным подходом к каждому пациенту
             </p>
 
             {/* Кнопки действий */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
               <Button 
                 size="lg"
                 onClick={scrollToAppointment}
@@ -72,7 +72,7 @@ const Hero = () => {
             </div>
 
             {/* Статистика */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-1">10+</div>
                 <div className="text-sm text-muted-foreground">лет опыта</div>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star } from "lucide-react";
-import heroImage from "@/assets/hero-smile.jpg";
+import heroImage from "@/assets/hero-dental-clinic.jpg";
 
 const Hero = () => {
   const scrollToAppointment = () => {

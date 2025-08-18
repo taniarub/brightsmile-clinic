@@ -17,7 +17,7 @@ const Hero = () => {
         <img 
           src={heroImage} 
           alt="Здоровая улыбка" 
-          className="w-full h-full object-cover object-center opacity-30"
+          className="w-full h-full object-cover object-center opacity-45"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/50"></div>
       </div>
